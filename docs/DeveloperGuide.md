@@ -57,6 +57,9 @@ employee information in fast-paced environments.
 
 ---
 
+//@@author gitsac-reused
+//Reused from https://github.com/AY2223S2-CS2103T-W09-2/tp with minor modifications
+
 ## **Purpose of this guide**
 
 The purpose of this guide is to give you an overarching insight into developing and maintaining TalentSG.
@@ -103,6 +106,8 @@ Refer to the guide [_Setting up and getting started_](SettingUp.md).
 ## **Design**
 
 This section gives an overview of the different components of TalentSG and how they interact with one another.
+
+//@@author
 
 <div markdown="span" class="alert alert-primary">
 
@@ -339,10 +344,16 @@ We will be using the user input `delete 1` as an example.
 6. The execute method of `DeleteCommand` returns a `CommandResult` object which stores the data regarding the completion of the `DeleteCommand`.
 7. The UI reflects this new list with deleted `Person`.
 
+
+//@@author gitsac-reused
+//Reused from https://github.com/AY2223S2-CS2103T-W09-2/tp
+
 <div markdown="span" class="alert alert-info">:information_source: **Note**:
 
 - At step 2, if input is detected as invalid, an error will be shown on the screen and the sequence of action is terminated.
 </div>
+
+//@@author
 
 #### `Delete Command` Implementation Sequence Diagram
 The sequence diagram below illustrates the above process of deleting a person from TalentSG.
@@ -389,10 +400,15 @@ We will be using the user input `edit 1 n/John Doe p/98765432 e/johnd@example.co
 6. The execute method of `EditCommand` returns a `CommandResult` object which stores the data regarding the completion of the `EditCommand`.
 7. The UI reflects this updated list with the edited `Person`.
 
+//@@author gitsac-reused
+//Reused from https://github.com/AY2223S2-CS2103T-W09-2/tp with minor modifications
+
 <div markdown="span" class="alert alert-info">:information_source: **Note**:
 
 - At step 2, if the input is detected as invalid (either index is invalid or no arguments provided other than index), a matching error will be shown on the screen and the sequence of action is terminated.
 </div>
+
+//@@author
 
 #### `EditCommand` Implementation Sequence Diagram
 The sequence diagram below illustrates the above process of editing a person's details in TalentSG.
@@ -436,10 +452,15 @@ We will be using the user input `list` as an example.
 5. The execute method of `ListCommand` returns a `CommandResult` object, indicating the command was successful with the message "Listed all persons".
 6. The UI reflects the updated list of persons.
 
+//@@author gitsac-reused
+//Reused from https://github.com/AY2223S2-CS2103T-W09-2/tp with minor modifications
+
 <div markdown="span" class="alert alert-info">:information_source: **Note**:
 
 - At step 2, if an invalid input is detected after `list` (e.g. `list xxxxxx`), an error will be shown and the sequence of action is terminated.
 </div>
+
+//@@author
 
 #### `ListCommand` Implementation Sequence Diagram
 The sequence diagram below illustrates the above process of executing the `list` command in TalentSG, which lists all persons in the address book.
@@ -480,10 +501,15 @@ We will be using the user input `find John` as an example.
 6. The execute method of `FindCommand` returns a `CommandResult` object which stores the data regarding the completion of the `FindCommand`.
 7. The UI reflects this updated filtered `Person` list.
 
+//@@author gitsac-reused
+//Reused from https://github.com/AY2223S2-CS2103T-W09-2/tp with minor modifications
+
 <div markdown="span" class="alert alert-info">:information_source: **Note**:
 
 - At step 2, if an invalid input is detected after `list` (e.g. `list xxxxxx`), an error will be shown and the sequence of action is terminated.
 </div>
+
+//@@author
 
 #### `FindCommand` Implementation Sequence Diagram
 The sequence diagram below illustrates the process of finding all persons based on keyword in TalentSG.
@@ -590,10 +616,15 @@ We will be using the user input `delete 2` as an example.
 5. The execute method of `ViewCommand` returns a `CommandResult` object which stores the data regarding the completion of the `ViewCommand`.
 6. The UI reflects the `OverviewPanel` with the selected `Person`.
 
+//@@author gitsac-reused
+//Reused from https://github.com/AY2223S2-CS2103T-W09-2/tp with minor modifications
+
 <div markdown="span" class="alert alert-info">:information_source: **Note**:
 
 - At step 2, if input is detected as invalid, an error will be shown on the screen and the sequence of action is terminated.
 </div>
+
+//@@author
 
 #### `ViewCommand` Implementation Sequence Diagram
 The sequence diagram below illustrates the above process of deleting a person from TalentSG.
@@ -634,10 +665,15 @@ We will be using the user input `summary` as an example:
 7. The execute method of `SummaryCommand` returns a `CommandResult` object, encapsulating the summary message for display to the user.
 8. The UI then reflects this summarized breakdown of application statuses.
 
+//@@author gitsac-reused
+//Reused from https://github.com/AY2223S2-CS2103T-W09-2/tp with minor modifications
+
 <div markdown="span" class="alert alert-info">:information_source: **Note**:
 
 - At step 2, if an invalid input is detected after `summary` (e.g. `summary abc`), an error will be shown and the sequence of action is terminated.
 </div>
+
+//@@author
 
 #### `SummaryCommand` Implementation Sequence Diagram
 The sequence diagram below illustrates the above process of executing the `summary` command in TalentSG, which lists all persons in the address book.
@@ -674,10 +710,15 @@ We will be using the user input `help` as an example:
 
 The CommandResult object is then passed to the UI, which opens a panel displaying the help content.
 
+//@@author gitsac-reused
+//Reused from https://github.com/AY2223S2-CS2103T-W09-2/tp with minor modifications
+
 <div markdown="span" class="alert alert-info">:information_source: **Note**:
 
 - At step 2, if an invalid input is detected after `help` (e.g. `help a123`), an error will be shown and the sequence of action is terminated.
 </div>
+
+//@@author
 
 --------------------------------------------------------------------------------------------------------------------
 
