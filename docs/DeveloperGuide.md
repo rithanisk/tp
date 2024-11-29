@@ -257,6 +257,8 @@ The `Storage` component,
 Classes used by multiple components are in the `seedu.address.commons` package.
 
 --------------------------------------------------------------------------------------------------------------------
+//@@author gitsac-reused
+//Reused from https://github.com/AY2223S2-CS2103T-W09-2/tp with major modifications
 
 ## **Implementation**
 
@@ -302,6 +304,8 @@ We will be using the user input `add n/John Doe p/98765432 e/johnd@example.com a
 
 #### `AddCommand` Implementation Sequence Diagram
 The sequence diagram below illustrates the above process of adding a person into TalentSG.
+
+//@@author
 
 <img src="images/AddCommandSequenceDiagram.png" width="550" />
 
