@@ -318,6 +318,9 @@ commands: DeleteCommand, EditCommand, FindCommand, FilterCommand, as its impleme
 
 ### Delete Person Feature
 
+//@@author gitsac-reused
+//Reused from https://github.com/AY2223S2-CS2103T-W09-2/tp with modifications
+
 #### **Command Feature**
 
 `delete INDEX`
@@ -362,6 +365,8 @@ We will be using the user input `delete 1` as an example.
 #### `Delete Command` Implementation Sequence Diagram
 The sequence diagram below illustrates the above process of deleting a person from TalentSG.
 
+//@@author
+
 <img src="images/DeleteCommandSequenceDiagram.png" width="800" />
 
 <div markdown="span" class="alert alert-info">
@@ -372,6 +377,9 @@ commands: AddCommand, EditCommand, FindCommand, FilterCommand, as its implementa
 ---
 
 ### Edit Person Feature
+
+//@@author gitsac-reused
+//Reused from https://github.com/AY2223S2-CS2103T-W09-2/tp with major modifications
 
 #### **Command Feature**
 
@@ -416,6 +424,8 @@ We will be using the user input `edit 1 n/John Doe p/98765432 e/johnd@example.co
 
 #### `EditCommand` Implementation Sequence Diagram
 The sequence diagram below illustrates the above process of editing a person's details in TalentSG.
+
+//@@author
 
 <img src="images/EditCommandSequenceDiagram.png" width="800" />
 
@@ -1073,6 +1083,9 @@ testers are expected to do more *exploratory* testing.
    2. Re-launch the app by double-clicking the jar file.<br>
        Expected: The most recent window size and location is retained.
 
+//@@author gitsac-reused
+//Reused from https://github.com/AY2223S2-CS2103T-W09-2/tp with major modifications
+
 ### Adding a Person
 
 1. **Adding a person while all persons are being shown**
@@ -1129,6 +1142,8 @@ testers are expected to do more *exploratory* testing.
 
     6. **Test case**: `edit 3 n/Jane Doe p/23456789 e/janedoe@example.com a/456 Elm St s/Python, HTML st/Interviewed ex/3 dr/Web Developer note/Invalid index`<br>
        **Expected**: No person is edited. Error details shown in the status message. Status bar remains the same.
+
+//@@author
 
 ### Listing All People
 
